@@ -119,10 +119,6 @@ def menu():
     time.sleep(.5)
     print("Creator: Nicholas C")
     time.sleep(.5)
-    print("Co-Creator: Tyler H")
-    time.sleep(.5)
-    print("Tester: BelowGround")
-    time.sleep(.5)
     print(" ")
     time.sleep(.5)
     answer = input("Would you like to load the information? [yes or no] ")
@@ -350,7 +346,7 @@ def maingame():
                 time.sleep(.5)
                 print("Take a nap: nap")
                 print("Stay by the fire: stay")
-                answer = input("Would you like to take a nap or stay by the fire")
+                answer = input("Would you like to take a nap or stay by the fire? ")
             elif answer == "no":
                 print("you died from the cold")
                 if __name__ != "__main__":
