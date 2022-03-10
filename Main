@@ -326,7 +326,10 @@ def maingame():
                 print(" ")
                 if answer == "yes":
                     inventory.remove("Barries Book")
+                    print("You used the book, and learned that the barries were bad to eat")
                     print("Inventory Item's:", inventory)
+                    print(" ")
+                    time.sleep(.5)
                 elif answer == "no":
                     print("Coming Soon...")
             elif answer == "dont":
