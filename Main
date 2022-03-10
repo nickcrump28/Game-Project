@@ -1,5 +1,7 @@
 import time
 
+inventory = []
+
 def tree():
     print("                                              .")
     time.sleep(.3)
@@ -283,8 +285,10 @@ def maingame():
             print(" ")
             print("1. You look for other food | yes")
             print("2. You head back to the crashed plane | no")
+            time.sleep(.5)
             print(" ")
             answer = input("You decided to skip the berries would you like to look for other food? ")
+            print(" ")
             if answer == "yes":
                 print("You couldn't find any other food")
                 print("You went back to the crashed plane")
@@ -296,9 +300,26 @@ def maingame():
             time.sleep(.5)
             print("1. Take the book | take")
             print("2. Don't take the book | dont")
+            time.sleep(.5)
+            print(" ")
             answer = input("Would you like to take the berries book? ")
+            print(" ")
             if answer == "take":
-                print("Coming Soon...")
+                inventory.append("Barries Book")
+                print("Inventory Item's:", inventory)
+                print(" ")
+                time.sleep(.5)
+                print("1. Use the book | yes")
+                print("2. Don't use the book| no")
+                print(" ")
+                time.sleep(.5)
+                answer = input("Would you like to use the book? ")
+                print(" ")
+                if answer == "yes":
+                    inventory.remove("Barries Book")
+                    print("Inventory Item's:", inventory)
+                elif answer == "no":
+                    print("Coming Soon...")
             elif answer == "dont":
                 print("Coming Soon...")
     elif answer == "camp":
