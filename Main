@@ -208,7 +208,9 @@ def maingame():
     print("2. Make a camp | camp")
     print("3. Run and look for people | run")
     print(" ")
+    time.sleep(1)
     answer: str = input("you just Woke up what you you like to do ")
+    print(" ")
     if answer == "search":
         print(" ")
         time.sleep(.5)
@@ -232,6 +234,7 @@ def maingame():
             print(" ")
             time.sleep(1)
             answer = input("you went back to where the plane crashed, what would you like to look through ")
+            print(" ")
             if answer == "mine":
                 print("you didn't find anything useful")
                 print("you triped and died")
@@ -247,7 +250,10 @@ def maingame():
                 print("1. take a rest | sleep")
                 print("2. walk around | hike")
                 print("3. cook the food you found | eat")
+                print(" ")
                 answer = input("what would you like to do? ")
+                print(" ")
+                time.sleep(.5)
                 if answer == "sleep":
                     print("you fell asleep under the star's and worried about what could happen at night")
                 elif answer == "hike":
@@ -256,9 +262,12 @@ def maingame():
                     time.sleep(.5)
                     print("Sleep | yes")
                     print("Don't sleep | no")
+                    print(" ")
+                    time.sleep(.5)
                     answer = input("would you like to goto sleep? ")
+                    print(" ")
                     if answer == "yes":
-                        print("You went to sleep peacfully!")
+                        print("You went to sleep peacefully!")
                         time.sleep(.5)
                         print(" ")
                         time.sleep(.5)
