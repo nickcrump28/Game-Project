@@ -68,6 +68,22 @@ def admin():
         if answer == "ADMINPASSWORD1":
             time.sleep(.5)
             print("𝙂𝘼𝙈𝙀 𝘼𝘿𝙈𝙄𝙉")
+            print(" ")
+            print("Pick a Admin Weapon you want to use below")
+            time.sleep(1)
+            print(" ")
+            print("1. The admin sword | Admin Sword")
+            print("2. Staff of darkness | Staff")
+            print("3. The big ban | Ban Hammer")
+            print(" ")
+            answer = input("Pick you weapon: ")
+            print(" ")
+            time.sleep(1)
+            if answer == "Admin Sword":
+                inventory.append("Admin Sword")
+                print("Admin Sword added to inventory")
+                time.sleep(.5)
+                print("Inventory Item's", inventory)
             time.sleep(.5)
             print(" ")
             if __name__ != "__main__":
@@ -330,6 +346,31 @@ def maingame():
                     print("Inventory Item's:", inventory)
                     print(" ")
                     time.sleep(.5)
+                    print("Find Something | hunt")
+                    print("Don't Find Something | im good")
+                    print(" ")
+                    time.sleep(.7)
+                    answer = input("Would you like to find something new to eat? ")
+                    print(" ")
+                    if answer == "hunt":
+                        print("You went looking for a different type of food and found a deer")
+                        print(" ")
+                        print("1. Attack the deer| attack")
+                        print("2. Don't attack the deer | dont")
+                        print(" ")
+                        answer = input("Would you like to attack the deer? ")
+                        print(" ")
+                        time.sleep(.5)
+                        if answer == "attack":
+                            if 'Admin Sword' in inventory:
+                                print("you killed the deer and have gained its meat")
+                                inventory.append("Deer Meat")
+                                print(inventory)
+                            else:
+                                print("you don't have a weapon yet")
+                                print("Path still being made")
+                    elif answer == "im good":
+                        print("Coming soon...")
                 elif answer == "no":
                     print("Coming Soon...")
             elif answer == "dont":
