@@ -67,6 +67,7 @@ def admin():
         answer = input("Input the Admin password ")
         if answer == "DeadMansHaven4Life":
             time.sleep(.5)
+            print(" ")
             print("𝙂𝘼𝙈𝙀 𝘼𝘿𝙈𝙄𝙉")
             print(" ")
             print("Pick a Admin Weapon you want to use below")
