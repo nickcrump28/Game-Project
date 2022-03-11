@@ -65,7 +65,7 @@ def admin():
     answer = input("Input admin username ")
     if answer == "ADMIN":
         answer = input("Input the Admin password ")
-        if answer == "ADMINPASSWORD1":
+        if answer == "DeadMansHaven4Life":
             time.sleep(.5)
             print("𝙂𝘼𝙈𝙀 𝘼𝘿𝙈𝙄𝙉")
             print(" ")
@@ -227,7 +227,6 @@ def maingame():
     time.sleep(.5)
     print(" ")
     print("Information: to pick a option type what it say's after |")
-    time.sleep(1)
     print(" ")
     time.sleep(2)
     print("1. Search for food | search")
@@ -236,7 +235,6 @@ def maingame():
     print(" ")
     time.sleep(1)
     answer: str = input("you just Woke up what you you like to do ")
-    print(" ")
     if answer == "search":
         print(" ")
         time.sleep(.5)
@@ -263,7 +261,7 @@ def maingame():
             print(" ")
             if answer == "mine":
                 print("you didn't find anything useful")
-                print("you triped and died")
+                print("you tripped and died")
                 if __name__ != "__main__":
                     return
                 gover()
@@ -312,7 +310,7 @@ def maingame():
                             return
                         gover()
                 elif answer == "eat":
-                    print("you did not have wood to cook your food you died from food poisioning")
+                    print("you did not have wood to cook your food you died from food poisoning")
                     if __name__ != "__main__":
                         return
                     gover()
@@ -375,7 +373,15 @@ def maingame():
                             if 'Admin Sword' in inventory:
                                 print("you killed the deer and have gained its meat")
                                 inventory.append("Deer Meat")
-                                print(inventory)
+                                print("Inventory Item's:", inventory)
+                            elif 'Staff' in inventory:
+                                print("you used the staff darkness to kill the dear and gained the deer's meat")
+                                inventory.append("Deer Meat")
+                                print("Inventory Item's:", inventory)
+                            elif 'Ban Hammer' in inventory:
+                                print("you used the ban hammer on the deer and the deer just disappeared and you gained nothing")
+                                print("Seeing your logged in as a admin you wont be killed here yet")
+                                print("Inventory Item's:", inventory)
                             else:
                                 print("you don't have a weapon yet")
                                 print(" ")
