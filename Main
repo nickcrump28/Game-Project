@@ -387,12 +387,12 @@ def maingame():
                                 print("you don't have a weapon yet")
                                 print(" ")
                                 time.sleep(.5)
-                                print("1. Go to the plane and try to find a knife | look through plane")
+                                print("1. Go to the plane and try to find a knife | look through the plane")
                                 print("2. Don't look through anything | stay")
                                 print(" ")
                                 answer = input("What would you like to do? ")
                                 print(" ")
-                                if answer == "look through plane":
+                                if answer == "look through the plane":
                                     print("You found a knife!")
                                     inventory.append("Basic Knife")
                                     print(inventory, "~ This knife does 3 Damage per swing")
