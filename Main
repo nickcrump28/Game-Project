@@ -564,7 +564,7 @@ def maingame():
                 elif answer == "no":
                     print("You just sat there and bear attacked your back and you died")
                     if __name__ != "__main__":
-                        return 
+                        return
                     gover()
             elif answer == "dont":
                 print("you left the book")
@@ -573,6 +573,10 @@ def maingame():
                 time.sleep(.2)
                 print("1. Leave the area | leave")
                 print("2. Stay in the area| stay")
+                print(" ")
+                time.sleep(.5)
+                answer = input("What would you like to do? ")
+                print(" ")
                 if answer == "leave":
                     print("you left the area with nothing")
                 elif answer == "stay":
