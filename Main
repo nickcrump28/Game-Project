@@ -215,7 +215,7 @@ def admin():
             print("1. The admin sword | Admin Sword")
             print("2. Staff of darkness | Staff")
             print("3. The big ban | Ban Hammer")
-            print("4. I Don't want anything | Nothing")
+            print("4. I Don't want anything | 'Nothing'", "|", "This feature gives your the admin user card!")
             print(" ")
             answer = input("Pick your weapon: ")
             print(" ")
@@ -285,7 +285,7 @@ def info():
     time.sleep(1)
     print("You were on a plane that went over a Jungle that someone shot down for some reason")
     print("you're name is Sir Christopher Lee ,")
-    print("you are a warlock, you are 45 years old")
+    print("you are a Kobald, you are 23 years old")
     time.sleep(2)
     print("")
     print("Loading all main files for game")
@@ -418,8 +418,13 @@ def maingame():
                 gover()
             elif answer == "others":
                 print("you have found a pocket knife")
+                inventory.append("pocket knife")
                 print("you also found a watter bottle")
+                inventory.append("full watter bottle")
                 print("you also found some food")
+                inventory.append("Eggs and Bacon MRE")
+                print(" ")
+                print(inventory)
                 print(" ")
                 time.sleep(.5)
                 print("1. take a rest | sleep")
@@ -552,11 +557,32 @@ def maingame():
                                         return
                                     gover()
                     elif answer == "im good":
-                        print("Coming soon...")
+                        print("you died from starvation")
+                        if __name__ != "__main__":
+                            return
+                        gover()
                 elif answer == "no":
-                    print("Coming Soon...")
+                    print("You just sat there and bear attacked your back and you died")
+                    if __name__ != "__main__":
+                        return 
+                    gover()
             elif answer == "dont":
-                print("Coming Soon...")
+                print("you left the book")
+                time.sleep(.5)
+                print(" ")
+                time.sleep(.2)
+                print("1. Leave the area | leave")
+                print("2. Stay in the area| stay")
+                if answer == "leave":
+                    print("you left the area with nothing")
+                elif answer == "stay":
+                    print("you decided to stay in the area")
+                    time.sleep(.5)
+                    print("at first this seemed like a smart idea until a tribe of hungry people came")
+                    print("they killed you and cooked you so they could survive")
+                    if __name__ != "__main__":
+                        return
+                    gover()
     elif answer == "camp":
         print(" ")
         print("1. Cut down a tree | yes")
