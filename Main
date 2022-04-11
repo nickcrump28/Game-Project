@@ -2,6 +2,20 @@ import time
 
 inventory = []
 
+def died():
+    print("██╗░░░██╗░█████╗░██╗░░░██╗  ██████╗░██╗███████╗██████╗░")
+    time.sleep(.5)
+    print("╚██╗░██╔╝██╔══██╗██║░░░██║  ██╔══██╗██║██╔════╝██╔══██╗")
+    time.sleep(.5)
+    print("░╚████╔╝░██║░░██║██║░░░██║  ██║░░██║██║█████╗░░██║░░██║")
+    time.sleep(.5)
+    print("░░╚██╔╝░░██║░░██║██║░░░██║  ██║░░██║██║██╔══╝░░██║░░██║")
+    time.sleep(.5)
+    print("░░░██║░░░╚█████╔╝╚██████╔╝  ██████╔╝██║███████╗██████╔╝")
+    time.sleep(.5)
+    print("░░░╚═╝░░░░╚════╝░░╚═════╝░  ╚═════╝░╚═╝╚══════╝╚═════╝░")
+
+
 def tree():
     print("                                              .")
     time.sleep(.3)
@@ -399,7 +413,13 @@ def maingame():
         if answer == "yes":
             print("The berries seemed safe enough and you ate them")
             print("You got sick and can no longer move on")
+            print(" ")
             time.sleep(.5)
+            if __name__ != "__main__":
+                return
+            died()
+            time.sleep(1)
+            print(" ")
             if __name__ != "__main__":
                 return
             gover()
