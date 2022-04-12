@@ -15,7 +15,6 @@ def died():
     time.sleep(.5)
     print("░░░╚═╝░░░░╚════╝░░╚═════╝░  ╚═════╝░╚═╝╚══════╝╚═════╝░")
 
-
 def tree():
     print("                                              .")
     time.sleep(.3)
@@ -578,6 +577,12 @@ def maingame():
                                     gover()
                     elif answer == "im good":
                         print("you died from starvation")
+                        print(" ")
+                        if __name__ != "__main__":
+                            return
+                        died()
+                        time.sleep(.5)
+                        print(" ")
                         if __name__ != "__main__":
                             return
                         gover()
@@ -650,22 +655,40 @@ def maingame():
                 time.sleep(.5)
                 print(" ")
                 time.sleep(.5)
-                print("Take a nap: nap")
-                print("Stay by the fire: stay")
+                print("Take a nap | nap")
+                print("Stay by the fire | stay")
                 answer = input("Would you like to take a nap or stay by the fire? ")
             elif answer == "no":
                 print("you died from the cold")
+                print(" ")
+                if __name__ != "__main__":
+                    return
+                died()
+                time.sleep(.5)
+                print(" ")
                 if __name__ != "__main__":
                     return
                 gover()
         elif answer == "no":
             print("you're body got cold and you passed out you are dead")
+            print(" ")
+            if __name__ != "__main__":
+                return
+            died()
+            time.sleep(.5)
+            print(" ")
             if __name__ != "__main__":
                 return
             gover()
     elif answer == "run":
         print(" ")
         print("you ran off a cliff")
+        print(" ")
+        if __name__ != "__main__":
+            return
+        died()
+        time.sleep(.5)
+        print(" ")
         if __name__ != "__main__":
             return
         gover()
